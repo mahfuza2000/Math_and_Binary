@@ -15,7 +15,7 @@ def getUserScore(userName):
         file = open('userScores.txt', 'r')
         for line in file:
             content = line.split(", ")
-            print(content) #print list to see content
+            # print(content) #print list to see content
             if content[0] == userName:
                 file.close()
                 return content[1]
